@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Curso De Cero a Python</title>
+  <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+  </style>
+
+  <script async src="https://cdn.datacamp.com/dcl-react.js.gz"></script>
+</head>
+<body>
+  <div class="exercise">
+    <div data-datacamp-exercise data-lang="python" data-height="auto" data-show-run-button>
+      <code data-type="pre-exercise-code"></code>
+      <code data-type="sample-code">
+		nombre1 = "Pablo"
+		nombre2 = "María"
+		#Escribe tu código en la próxima línea
+      </code>
+      <code data-type="solution">
+		nombre1 = "Pablo"
+		nombre2 = "María"
+		#Escribe tu código en la próxima línea
+		print(nombre2, "y" , nombre1, "fueron de paseo al parque.")
+	  </code>
+      <code data-type="sct">
+	    test_object('nombre1', undefined_msg='Asegurate que dejaste la varible `nombre1` definida como en el inicio del ejercicio', incorrect_msg='Asegurate que la variable `nombre1` contenga el valor Pablo')
+		test_object('nombre2', undefined_msg='Asegurate que dejaste la varible `nombre2` definida como en el inicio del ejercicio', incorrect_msg='Asegurate que la variable `nombre2` contenga el valor María')
+		test_output_contains("María y Pablo fueron de paseo al parque.", pattern=False,no_output_msg = 'Revisa que la oración que genera el código sea idéntica a la que se pide. ¡Todos los caracteres cuentan!')
+		success_msg("Excelente! Continúa con el curso!")
+	  </code>
+      <div data-type="hint">Recuerda que el método `print` puede recibir varios elementos separados por coma.</div>
+    </div>
+  </div>
+</body>
+</html>
